@@ -4,7 +4,7 @@ jobs:
   my_job:
     runs-on: ubuntu-latest
     steps:
-      -name: my_step
-       run: echo "hello guys"
+      - name: my_step
+        run: echo "hello guys"
       
       
