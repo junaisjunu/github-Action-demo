@@ -1,10 +1,26 @@
-name: first-workflow
-on: [push]
+name: Python
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
 jobs:
-  my_job:
+  flake8:
     runs-on: ubuntu-latest
     steps:
-      - name: my_step
-        run: echo "hello guys"
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4.1.0
+        with:
+          python-version: 3.7
+
+      - name: Install flake8
+        run: pip --disable-pip-version-check install flake8
+
+      - name: Lint with flake8
+        run: flake8 --count
       
       
