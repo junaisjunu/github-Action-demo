@@ -10,4 +10,5 @@ class app:
 
 if __name__ == "__main__":
     ap = app()
-    print(ap.game(12, 13))        
+    print(ap.game(12, 13))
+      
