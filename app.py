@@ -1,4 +1,4 @@
-from src.my_fnc import my_funct
+
 
 class app:
     def __init__(self) -> None:

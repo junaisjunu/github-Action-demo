@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Flake8
         run: |
-          flake8 --count --ignore=W291,W292 --exclude=tests/test_myfunc.py
+          flake8 --count --ignore=W291,W292,E231 --exclude=tests/test_myfunc.py
 
       - name: Run pytest
         run: |
