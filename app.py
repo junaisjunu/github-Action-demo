@@ -5,10 +5,9 @@ class app:
         pass
 
     def game(self, a, b):
-        return a + b 
+        return a + b
 
 
-if __name__=="__main__":
-    ap=app()
-    print(ap.game(12, 13))
-        
+if __name__ == "__main__":
+    ap = app()
+    print(ap.game(12, 13))        
