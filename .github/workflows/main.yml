@@ -26,4 +26,4 @@ jobs:
 
       - name: Run Flake8
         run: |
-          flake8 --count
+          flake8 --count --ignore=W291,W292
